@@ -1,0 +1,1 @@
+This is dummy end point for testing connection with 3Scale.
