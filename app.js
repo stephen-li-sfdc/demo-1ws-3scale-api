@@ -3,11 +3,9 @@ var express         = require('express'),
     fs              = require('fs'),
     path            = require('path'),
     uuid            = require('uuid'),
-    morgan          = require('morgan'),
     winston         = require('winston');
 
 var app = express();
-app.use(morgan('combination'));
 app.use(function (req, res, next) {
     if (req) {
         winston.info('request headers: ',req.headers);
